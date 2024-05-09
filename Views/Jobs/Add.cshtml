@@ -1,0 +1,106 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    ViewBag.Title = "اضافة وظيفه";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+
+}
+
+@model Job
+
+
+<h3>اضافة وظيفه</h3>
+<form action="\Jobs\SaveAdd\@Model.Id" class=" form" method="post" style="padding-right:50px">
+    <div class="alert alert-danger" id="error-div" style="display:none">
+        <span id="view-err">
+
+        </span>
+    </div>
+    <div>
+        <label for="JobTitle">  أسم الوظفيه:</label>
+        <input type="text" name="JobTitle" id="JobTitle" class="form-control" value="@Model.JobTitle" />
+    </div>
+
+    <div>
+        <label for="JobContent">  وصف الوظيفه:</label>
+        <input type="text" name="JobContent" id="JobContent" class="form-control" value="@Model.JobContent" />
+    </div>
+
+    <div>
+        <label for="JobImage">  صورة الوظيفه:</label>
+        <input type="file" name="JobImage" id="JobImage" class="form-control" value="@Model.JobImage" /> 
+        @* <input type="text" name="JobImage" id="JobImage" class="form-control" value="@Model.JobImage" /> *@
+
+    </div>
+
+    <div>
+        <label for="CategoryId">  تصنيف الوظيفه:</label>
+        <select name="CategoryId" id="CategoryId" class="form-control">
+            @foreach (var item in ViewBag.Categories)
+            {
+                if (item.Id == Model.CategoryId)
+                {
+                    <option value="@item.Id" selected>
+                        @item.CategoryName
+                    </option>
+                }
+                else
+                {
+                    <option value="@item.Id">
+                        @item.CategoryName
+                    </option>
+                }
+
+            }
+        </select>
+    </div>
+
+    <br />
+    <input type="submit" value="اضافه" class="btn btn-success" style="background-color:#ec4899;" id="save" />
+</form>
+
+
+@section scripts {
+    <script>
+        $(function () {
+            $("#save").click(function () {
+                if ($("#JobImage").val() == "") {
+                    $("#error-div").fadeIn();
+                    $("#view-err").append("رجاء قم باختيار صورة للوظيفة");
+                    return false;
+                }
+
+                var name = document.getElementById("JobImage").value;
+                var extention = name.substr(name.lastIndexOf('.') + 1);
+
+                var validEx = ['jpg', 'png', 'gif'];
+
+                if ($.inArray(extention,validEx) == -1) {
+                    $("#error-div").fadeIn();
+                    $("#view-err").append("رجاء قم باختيار صوره بامتداد مناسب");
+                    return false;
+                }
+
+                //size
+                var imgSize = document.getElementById("JobImage").files[0].size / 1024 / 1024;
+
+                if (imgSize > 2) {
+                    $("#error-div").fadeIn();
+                    $("#view-err").append("رجاء قم باختيار صوره حجمها اقل من 2 ميغا بايت");
+                    return false;
+                }
+
+            });
+        });
+    </script>
+
+}

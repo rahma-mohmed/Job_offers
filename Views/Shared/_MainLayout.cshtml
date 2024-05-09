@@ -1,0 +1,145 @@
+﻿@using Microsoft.AspNetCore.Http
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial scale=1" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font.css" rel="stylesheet" />
+    <link href="~/css/layoutstyling.css" rel="stylesheet" />
+</head>
+<body style="padding-top:100px;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">
+                    <img src="~/images/logo2.png" style="width: 100px;height: 55px; padding-bottom:20px" />
+                    
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar navbar-nav">
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-home"></i>
+                            الصفحه الرئيسيه
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-list"> </i>
+                            أصناف العروض
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                            حول الموقع
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            أتصل بنا
+                        </a>
+                    </li>
+
+                    @if(ViewContext.HttpContext.Session.GetString("Name") != null)
+                    {
+                        <li style="padding-right:200px;">
+                            <a asp-area="" asp-controller="Home" asp-action="Index">مرحبا بك يا  @ViewContext.HttpContext.Session.GetString("Name")</a>
+                        </li>
+
+
+                        <li style="padding-left:50px;">
+                            <a  asp-area="" asp-controller="Home" asp-action="Logout">تسجيل الخروج</a>
+                        </li>
+                    }
+                    else
+                    {
+                        
+                        <li style="padding-right:200px;">
+                            <a  asp-area="" asp-controller="Home" asp-action="Login">تسجيل الدخول</a>
+                        </li>
+
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Signup">أشتراك</a>
+                        </li>
+                    }
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            @RenderBody()
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <br />
+    <br />
+    <footer class="myFooter" style="position: relative;
+    top: 250px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>
+                        من نحن؟
+                        <i class="glyphicon glyphicon-info-sign"></i>
+                    </h3>
+                    <p>
+                        في وظفني نؤمن بقوة التكنولوجيا لتحسين عملية التوظيف، مما يجعلها أكثر سهولة، فعالية، وشخصية. نستخدم أحدث الأدوات والتقنيات لتحليل البيانات والمطابقة بين المرشحين والوظائف، ضمانًا للتناغم الأمثل بين المهارات والمتطلبات
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>
+                        روابط هامه
+                        <i class="glyphicon glyphicon-globe"></i>
+                    </h3>
+                    <ul>
+                        <li><a href="#">وظائف القطاع العام</a></li>
+                        <li><a href="#">وظائف القطاع الخاص</a></li>
+                        <li><a href="#">وظائف خارج البلاد</a></li>
+                        <li><a href="#">وظائف متنوعه</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>
+                        تواصل معنا
+                        <i class="glyphicon glyphicon-earphone"></i>
+                    </h3>
+                    <ul>
+                        <li><a href="#">فيسبوك</a></li>
+                        <li><a href="#">يوتيوب</a></li>
+                        <li><a href="#">انستجرام</a></li>
+                        <li><a href="#"> تويتر</a></li>
+                        <li><a href="#">راسلنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subfooter">
+            <span>جميع الحقوق محفوظه لعام 2024</span>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/bootstrap/bootstrap.min.js"></script>
+
+    @RenderSection("scripts", required:false)
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿@model List<Category>
+
+@{
+    ViewBag.Title = "أنواع الوظائف";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+    <h2>أنواع الوظائف</h2>
+    <p>@Html.ActionLink("انشاء نوع جديد", "AddCategory", "Categories")</p>
+
+    <table class="table">
+        <tr>
+            <th>نوع الوظيفه</th>
+            <th>وصف الوظيفه</th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.CategoryName
+                </td>
+                <td>
+                    @item.CategoryDescription
+                </td>
+                <td>
+                    <a asp-controller="Categories" asp-action="Edit" asp-route-id="@item.Id"> تعديل </a> |
+                    <a asp-controller="Categories" asp-action="Details" asp-route-id="@item.Id"> تفاصيل </a> |
+                <a asp-controller="Categories" asp-action="Confirm_delete" asp-route-id="@item.Id"> حذف </a>
+                </td>
+            </tr>
+        }
+    </table>
+
+

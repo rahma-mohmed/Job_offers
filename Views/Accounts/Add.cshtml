@@ -1,0 +1,35 @@
+﻿@model Account
+<h3>انشاء حساب جديد</h3>
+<form action="\Accounts\SaveAdd\@Model.Id" class=" form" method="post" style="padding-right:50px">
+    <div>
+        <label for="name">الاسم:</label>
+        <input type="text" name="Name" id="Name" class="form-control" value="@Model.Name"/>
+    </div>
+    <div>
+        <label for="Password">كلمه المرور:</label>
+        <input type="password" name="Password" id="Password" class="form-control" value="@Model.Password" />
+    </div>
+
+    <div>
+        <label for="Password">تاكيد كلمه المرور:</label>
+        <input type="password" name="Password" id="Password" class="form-control" value="@Model.Password" />
+    </div>
+
+    <div>
+        <label for="Email">الايميل:</label>
+        <input type="email" name="Email" id="Email" class="form-control" value="@Model.Email" />
+    </div>
+
+    <div>
+        <label for="Account_Type">نوع الحساب:</label>
+        <select name="Account_Type" id="Account_Type" class="form-control">
+            @foreach (var item in ViewBag.Types)
+            {
+                <option>@item</option>
+            }
+        </select>
+    </div>
+
+    <br />
+    <input type="submit" value="أضافه" class="btn btn-success" style="background-color:#ec4899;" />
+</form>

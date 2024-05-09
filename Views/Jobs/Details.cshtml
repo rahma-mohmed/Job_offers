@@ -1,0 +1,56 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    ViewBag.Title = "الوظيفه";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+
+}
+
+@model Job
+
+<h2>الوظيفه</h2>
+<div>
+
+    <h4>تفاصيل الوظيفه  </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            أسم الوظفيه:
+        </dt>
+        <dd>
+            @Model.JobTitle
+        </dd>
+        <dt>وصف الوظيفه: </dt>
+        <dd>
+            @Model.JobContent
+        </dd>
+
+        <dt>صورة الوظيفه: </dt>
+        <dd>
+            <img src="~/Images/@Model.JobImage" class ="thumbnail" style="width:68px; height:68px;"/>
+        </dd>
+
+        <dt>نوع الوظيفه: </dt>
+        
+            @foreach (var x in @ViewBag.Categories)
+            {
+                if (x.Id == @Model.CategoryId)
+                {
+                    <dd>
+                        @x.CategoryName
+                    </dd>
+                }
+            }
+        
+    </dl>
+
+    <a asp-controller="Jobs" asp-action="Edit" asp-route-id="@Model.Id"> تعديل </a>
+
+</div>
+
+@Html.ActionLink("العودة الى القائمه", "Back", "Jobs")
+

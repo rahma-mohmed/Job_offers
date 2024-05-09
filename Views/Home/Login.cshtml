@@ -1,0 +1,19 @@
+﻿@model Account
+<h3>اهلا بعودتك </h3>
+<form action="\Home\Login\@Model.Id" class=" form" method="post" style="padding-right:50px">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control" />
+    </div>
+
+    <br />
+    <h5 class="text-danger">@ViewBag.Notification</h5>
+
+    <br />
+    <input type="submit" value="Enter" class="btn btn-success" style="background-color:#ec4899;" />
+</form>
+

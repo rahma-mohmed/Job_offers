@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "تعديل وظيفه";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+
+}
+
+@model Category
+
+
+<h3>تعديل الوظيفه</h3>
+<form action="\Categories\Saveedit\@Model.Id" class=" form" method="post" style="padding-right:50px">
+    <div>
+        <label for="CategoryName">نوع الوظيفة:</label>
+        <input type="text" name="CategoryName" id="CategoryName" class="form-control" value="@Model.CategoryName" />
+    </div>
+    <div>
+        <label for="CategoryDescription"> وصف الوظيفه:</label>
+        <input type="text" name="CategoryDescription" id="CategoryDescription" class="form-control" value="@Model.CategoryDescription" />
+    </div>
+    <br />
+    <input type="submit" value="حفظ" class="btn btn-success" style="background-color:#ec4899;" />
+</form>
+
+<br />
+    @Html.ActionLink("العودة الى القائمه", "Back", "Categories")
+

@@ -1,0 +1,75 @@
+.navbar-default {
+    background-color: #ec4899;
+
+}
+
+@font-face {
+    font-family: 'droid_naskh';
+    src: url('font/DroidNaskh-Regular.ttf');
+}
+
+@font-face {
+    font-family: "GE_SS_Two_Bold";
+    src: url("font/GE_SS_Two_Bold.otf") format("truetype");
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #831843;
+    font-family: "GE_SS_Two_Bold";
+}
+
+body {
+    padding-top: 100px;
+    font-family: droid_naskh;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #9D174D;
+    font-family: "GE_SS_Two_Bold";
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #f472b6;
+}
+
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+        background-color: #f472b6;
+}
+
+.icon-bar {
+    background-color: #ec4899;
+}
+
+.nav > li {
+        position: relative;
+        display: block;
+        padding-top: 10px;
+        height: 70px;
+}
+
+.myFooter {
+    background-color: #f9a8d4;
+    padding-top: 10px;
+    font-family: "GE_SS_Two_Bold";
+    text-align: justify;
+    position: relative;
+    top: 520px;
+}
+
+.subfooter {
+    background-color: #ec4899;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.myFooter a {
+    color: #831843;
+}
+
+.myFooter h3, ul, p{
+    margin-bottom: 20px;
+    font-family: 'droid_naskh';
+}
+
+

@@ -1,0 +1,51 @@
+﻿@model List<Job>
+
+@{
+    ViewBag.Title = "الوظائف";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2> الوظائف</h2>
+<p>@Html.ActionLink("اضافه نوع جديد", "Add", "Jobs")</p>
+
+<table class="table table-striped table-bordered table-hover">
+    <tr>
+        <th>نوع الوظيفه</th>
+        <th>أسم الوظيفه</th>
+        <th>وصف الوظيفه</th>
+        <th>صوره الوظيفه</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+                @foreach (var x in @ViewBag.Categories)
+                {
+                    if (x.Id == item.CategoryId)
+                    {
+                    <td>
+                         @x.CategoryName
+                    </td>
+                    }
+                }
+
+            <td>
+                @item.JobTitle
+            </td>
+            <td>
+                @item.JobContent
+            </td>
+            <td>
+                <img src="~/Images/@item.JobImage" class="thumbnail" style="width:68px; height:68px;" />
+            </td>
+            <td>
+                <a asp-controller="Jobs" asp-action="Edit" asp-route-id="@item.Id"> تعديل </a> |
+                <a asp-controller="Jobs" asp-action="Details" asp-route-id="@item.Id"> تفاصيل </a> |
+                <a asp-controller="Jobs" asp-action="Confirm_delete" asp-route-id="@item.Id"> حذف </a>
+            </td>
+        </tr>
+    }
+</table>
+
+
+

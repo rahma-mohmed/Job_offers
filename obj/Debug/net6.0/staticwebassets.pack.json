@@ -1,0 +1,493 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\1.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\3.jpg",
+      "PackagePath": "staticwebassets\\Images\\3.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\4.jpg",
+      "PackagePath": "staticwebassets\\Images\\4.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\5.jpg",
+      "PackagePath": "staticwebassets\\Images\\5.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\6.jpg",
+      "PackagePath": "staticwebassets\\Images\\6.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\logo.jpg",
+      "PackagePath": "staticwebassets\\Images\\logo.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\logo2.png",
+      "PackagePath": "staticwebassets\\Images\\logo2.png"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\LayoutStyling.css",
+      "PackagePath": "staticwebassets\\css\\LayoutStyling.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font.css",
+      "PackagePath": "staticwebassets\\css\\font.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\DroidKufi-Regular.ttf",
+      "PackagePath": "staticwebassets\\css\\font\\DroidKufi-Regular.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\DroidNaskh-Bold.ttf",
+      "PackagePath": "staticwebassets\\css\\font\\DroidNaskh-Bold.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\DroidNaskh-Regular.ttf",
+      "PackagePath": "staticwebassets\\css\\font\\DroidNaskh-Regular.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\css\\font\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\GE_SS_Two_Bold.eot",
+      "PackagePath": "staticwebassets\\css\\font\\GE_SS_Two_Bold.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\GE_SS_Two_Bold.otf",
+      "PackagePath": "staticwebassets\\css\\font\\GE_SS_Two_Bold.otf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\GE_SS_Two_Bold.woff",
+      "PackagePath": "staticwebassets\\css\\font\\GE_SS_Two_Bold.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\GE_SS_Two_Light.eot",
+      "PackagePath": "staticwebassets\\css\\font\\GE_SS_Two_Light.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\GE_SS_Two_Light.otf",
+      "PackagePath": "staticwebassets\\css\\font\\GE_SS_Two_Light.otf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\GE_SS_Two_Light.woff",
+      "PackagePath": "staticwebassets\\css\\font\\GE_SS_Two_Light.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\GE_SS_Two_Medium.eot",
+      "PackagePath": "staticwebassets\\css\\font\\GE_SS_Two_Medium.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\GE_SS_Two_Medium.otf",
+      "PackagePath": "staticwebassets\\css\\font\\GE_SS_Two_Medium.otf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\GE_SS_Two_Medium.woff",
+      "PackagePath": "staticwebassets\\css\\font\\GE_SS_Two_Medium.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\HelveticaNeueW23-Reg.ttf",
+      "PackagePath": "staticwebassets\\css\\font\\HelveticaNeueW23-Reg.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\TanseekModernProArabic-Bold1.eot",
+      "PackagePath": "staticwebassets\\css\\font\\TanseekModernProArabic-Bold1.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\TanseekModernProArabic-Bold2.woff",
+      "PackagePath": "staticwebassets\\css\\font\\TanseekModernProArabic-Bold2.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\TanseekModernProArabic-Bold3.ttf",
+      "PackagePath": "staticwebassets\\css\\font\\TanseekModernProArabic-Bold3.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\TanseekModernProArabic1.eot",
+      "PackagePath": "staticwebassets\\css\\font\\TanseekModernProArabic1.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\TanseekModernProArabic2.woff",
+      "PackagePath": "staticwebassets\\css\\font\\TanseekModernProArabic2.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\TanseekModernProArabic3.ttf",
+      "PackagePath": "staticwebassets\\css\\font\\TanseekModernProArabic3.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\font-awesome.css",
+      "PackagePath": "staticwebassets\\css\\font\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\css\\font\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\css\\font\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\css\\font\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\css\\font\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\css\\font\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\css\\font\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\css\\font\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\css\\font\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\css\\font\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\css\\font\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\iconic_stroke.eot",
+      "PackagePath": "staticwebassets\\css\\font\\iconic_stroke.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\index.html",
+      "PackagePath": "staticwebassets\\css\\font\\index.html"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\font\\trado.ttf",
+      "PackagePath": "staticwebassets\\css\\font\\trado.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\DroidKufi-Regular.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\DroidKufi-Regular.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\DroidNaskh-Bold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\DroidNaskh-Bold.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\DroidNaskh-Regular.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\DroidNaskh-Regular.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\GE_SS_Two_Bold.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\GE_SS_Two_Bold.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\GE_SS_Two_Bold.otf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\GE_SS_Two_Bold.otf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\GE_SS_Two_Bold.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\GE_SS_Two_Bold.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\GE_SS_Two_Light.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\GE_SS_Two_Light.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\GE_SS_Two_Light.otf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\GE_SS_Two_Light.otf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\GE_SS_Two_Light.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\GE_SS_Two_Light.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\GE_SS_Two_Medium.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\GE_SS_Two_Medium.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\GE_SS_Two_Medium.otf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\GE_SS_Two_Medium.otf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\GE_SS_Two_Medium.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\GE_SS_Two_Medium.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\HelveticaNeueW23-Reg.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\HelveticaNeueW23-Reg.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\TanseekModernProArabic-Bold1.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\TanseekModernProArabic-Bold1.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\TanseekModernProArabic-Bold2.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\TanseekModernProArabic-Bold2.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\TanseekModernProArabic-Bold3.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\TanseekModernProArabic-Bold3.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\TanseekModernProArabic1.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\TanseekModernProArabic1.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\TanseekModernProArabic2.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\TanseekModernProArabic2.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\TanseekModernProArabic3.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\TanseekModernProArabic3.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\font-awesome.css",
+      "PackagePath": "staticwebassets\\lib\\fonts\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\fonts\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\lib\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\iconic_stroke.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\iconic_stroke.eot"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\index.html",
+      "PackagePath": "staticwebassets\\lib\\fonts\\index.html"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\fonts\\trado.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\trado.ttf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Job_offers.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Job_offers.props",
+      "PackagePath": "build\\Job_offers.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Job_offers.props",
+      "PackagePath": "buildMultiTargeting\\Job_offers.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Job_offers.props",
+      "PackagePath": "buildTransitive\\Job_offers.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

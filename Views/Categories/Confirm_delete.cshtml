@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    ViewBag.Title = "الوظيفه";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+
+}
+
+@model Category
+
+<h2>هل أنت متأكد من حذف هذه الوظيفة ؟</h2>
+
+<div>
+    <h4>تفاصيل الوظيفه  </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            نوع الوظيفه :
+        </dt>
+        <dd>
+            @Model.CategoryName
+        </dd>
+        <dt>وصف الوظيفه : </dt>
+        <dd>
+            @Model.CategoryDescription
+        </dd>
+    </dl>
+
+    <button class="btn btn-success" style="background-color:#ec4899;"><a asp-controller="Categories" asp-action="Delete" asp-route-id="@Model.Id" style="color:white; text-decoration:none"> تأكيد الحذف </a></button>
+
+</div>
+<br />
+@Html.ActionLink("العودة الى القائمه", "Back", "Categories")
+
