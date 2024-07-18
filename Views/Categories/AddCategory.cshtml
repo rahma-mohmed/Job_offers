@@ -4,7 +4,7 @@
 @{
 }
 @{
-    ViewBag.Title = "اضافة صنف";
+    ViewBag.Title = "اضافة نوع جديد";
     Layout = "~/Views/Shared/_MainLayout.cshtml";
 
 }
@@ -12,7 +12,7 @@
 @model Category
 
 
-    <h3>اضافة صنف</h3>
+    <h3>اضافة نوع جديد</h3>
     <form action="\Categories\SaveAdd\@Model.Id" class=" form" method="post" style="padding-right:50px">
         <div>
             <label for="CategoryName">نوع الوظيفة:</label>
@@ -23,5 +23,5 @@
             <input type="text" name="CategoryDescription" id="CategoryDescription" class="form-control" value="@Model.CategoryDescription" />
         </div>
         <br />
-        <input type="submit" value="اضافه" class="btn btn-success" style="background-color:#ec4899;" />
+    <p> <input type="submit" value="اضافه" class="btn btn-success" style="background-color:#ec4899;" /> <span style="margin-right:20px;"> @Html.ActionLink("العودة الى القائمة الرئيسية", "IndexCategory", "Categories")</span></p>
     </form>

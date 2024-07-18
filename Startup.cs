@@ -8,11 +8,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Job_offers.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Job_offers
 {
     public class Startup
     {
+   
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,6 +31,9 @@ namespace Job_offers
             services.AddSession();
             services.AddMemoryCache();
             services.AddControllersWithViews();
+            services.AddDbContext<JobContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DafaultConnection")));
+            services.AddIdentity<IdentityUser , IdentityRole>().AddEntityFrameworkStores<JobContext>();
+
         }
 
 
@@ -38,13 +46,15 @@ namespace Job_offers
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Account/Error");
             }
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
@@ -54,7 +64,7 @@ namespace Job_offers
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Account}/{action=Index}/{id?}");
             });
         }
     }

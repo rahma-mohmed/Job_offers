@@ -1,0 +1,77 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject Job_offers.Models.JobContext Context
+@inject UserManager<IdentityUser> UserManager
+
+@if (User.Identity.IsAuthenticated)
+{
+    var UserId = UserManager.GetUserId(User);
+    var CurrentUser = Context.Accounts.Where(x => x.Id == UserId).SingleOrDefault();
+    
+    <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+            <a asp-area="" asp-controller="Account" asp-action="Index" class="dropdown-toggle" data-toggle="dropdown">مرحبا بك يا  @CurrentUser.Name
+            <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <div class="nav-bar-user">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <p class="text-center">
+                                <span class="glyphicon glyphicon-user" style="font-size:40px;"></span>
+                                </p>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="text-right">
+                                    <b>
+                                        @CurrentUser.Name
+                                    </b>
+                                </p>
+                                @if(CurrentUser.Account_Type == "Publisher")
+                                {
+                                    <a asp-action="GetJobsByPublisher" asp-controller="Jobs" class="btn btn-success btn-block">الوظائف التى قمت بنشرها</a>
+                                    <a asp-action="Add" asp-controller="Jobs" class="btn btn-info btn-block">نشر وظيفة جديدة</a>
+
+                                }
+                                else
+                                {
+                                    <a asp-action="GetJobsByUser" asp-controller="Jobs" class="btn btn-success btn-block">الوظائف التى تقدمت اليها </a>
+                                }
+                                <a asp-action="EditProfile" asp-controller="Account" class="btn btn-primary btn-block">تعديل الحساب</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>
+                                    <a asp-area="" asp-controller="Account" asp-action="Logout" class="btn btn-danger btn-block">تسجيل الخروج</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    </li>
+
+
+    <li>
+        <a asp-area="" asp-controller="Account" asp-action="Logout">تسجيل الخروج</a>
+    </li>
+    </ul>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+    <li>
+        <a asp-area="" asp-controller="Account" asp-action="Login">تسجيل الدخول</a>
+    </li>
+
+    <li>
+        <a asp-area="" asp-controller="Account" asp-action="Signup">أشتراك</a>
+    </li>
+    </ul>
+}

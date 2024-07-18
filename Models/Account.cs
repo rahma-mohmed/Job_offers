@@ -1,31 +1,40 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Job_offers.Models
 {
     public class Account
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
 
-   
-        [Required(ErrorMessage = "Name is required")]
         [DisplayName("أسم المستخدم")]
+        [Required(ErrorMessage = "رجاء قم بادخال الاسم")]
         public string Name {  get; set; }
 
-      
-        [Required(ErrorMessage = "Password is required")]
+
         [DataType(DataType.Password)]
         [DisplayName("كلمه المرور")]
-        public int Password { get; set; }
+        [Required(ErrorMessage = "رجاء قم بادخال كلمه المرور")]
+        public string Password { get; set; }
 
-        [Required(ErrorMessage = "this failed is required")]
+        
         [DataType(DataType.Password)]
-        [Compare("Password", ErrorMessage = "Confirm password doesn't match, try again")]
+        [DisplayName("تأكيد كلمه المرور")]
+        [Compare("Password", ErrorMessage = "غير مطابقه لكلمه المرور حاول مره اخرى")]
+        [Required(ErrorMessage = "رجاء قم بادخال تاكيد كلمه المرور")]
         public string RePassword { get; set; }
 
-        [Required(ErrorMessage = "Email is required")]
-        [RegularExpression(@"\w+\@gmail.com", ErrorMessage = "invalid email, must contain @")]
+
+        [DataType(DataType.EmailAddress , ErrorMessage = "@ خطأ فى الايميل يجب ان يحتوي ")]
+        [Required(ErrorMessage = "رجاء قم بادخال الايميل")]
         public string Email { get; set; }
+
         public string Account_Type { get; set; }
+
+        [DisplayName("تذكرني")]
+        public bool IsPresistent { get; set; }
+
+        public virtual ICollection<Job> jobs { get; set; }
     }
 }

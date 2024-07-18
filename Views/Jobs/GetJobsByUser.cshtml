@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Job_offers.Models.ApplyForJob>
+
+@{
+    ViewData["Title"] = "GetJobsByUser";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h1>جميع الوظائف التي تقدمت  اليها </h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.job.JobTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplyDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                 @Html.DisplayFor(modelItem => item.job.JobTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplyDate)
+            </td>
+            <td>
+                    @Html.ActionLink("تعديل", "EditForJob", new { id = item.Id }) |
+                    @Html.ActionLink("تفاصيل", "DetailsForJob", new { id = item.Id }) |
+                    @Html.ActionLink("حذف", "ConfirmDelete", new { id = item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

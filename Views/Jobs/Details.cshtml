@@ -24,15 +24,26 @@
         <dd>
             @Model.JobTitle
         </dd>
+        <br />
         <dt>وصف الوظيفه: </dt>
         <dd>
             @Model.JobContent
         </dd>
+        <br />
 
         <dt>صورة الوظيفه: </dt>
         <dd>
-            <img src="~/Images/@Model.JobImage" class ="thumbnail" style="width:68px; height:68px;"/>
+            @if (!string.IsNullOrEmpty(Model.JobImage))
+            {
+
+                <img src="~/@Model.JobImage" class="thumbnail" style="width:128px; height:128px;" />
+            }
+            else
+            {
+                <span>لا توجد صورة متاحة</span>
+            }
         </dd>
+        <br />
 
         <dt>نوع الوظيفه: </dt>
         
@@ -45,12 +56,12 @@
                     </dd>
                 }
             }
-        
+            <br />
     </dl>
-
-    <a asp-controller="Jobs" asp-action="Edit" asp-route-id="@Model.Id"> تعديل </a>
-
 </div>
+<p>
+    <a asp-controller="Jobs" asp-action="Apply" asp-route-id="@Model.Id" class="btn btn-success"> التقدم الي هذه الوظيفه </a>
+    @Html.ActionLink("العودة الى القائمة الرئيسية", "Index", "Jobs")
+</p>
 
-@Html.ActionLink("العودة الى القائمه", "Back", "Jobs")
 

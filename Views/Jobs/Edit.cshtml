@@ -8,13 +8,14 @@
 
 
 <h3>تعديل الوظيفه</h3>
-<form action="\Jobs\SaveEdit\@Model.Id" class=" form" method="post" style="padding-right:50px">
+<form action="\Jobs\SaveEdit\@Model.Id" class=" form" method="post" style="padding-right:50px" enctype="multipart/form-data">
 
     <div class="alert alert-danger" id="error-div" style="display:none">
         <span id="view-err">
 
         </span>
     </div>
+
     <div>
         <label for="JobTitle">  أسم الوظفيه:</label>
         <input type="text" name="JobTitle" id="JobTitle" class="form-control" value="@Model.JobTitle" />
@@ -26,8 +27,9 @@
     </div>
 
     <div>
-        <label for="JobImage">  صورة الوظيفه:</label>
-        <input type="file" name="JobImage" id="JobImage" class="form-control" value="@Model.JobImage" />
+        <label asp-for="JobImage"></label>
+        <input asp-for="JobImage" type="file" class="form-control" id="JobImage" />
+        <span asp-validation-for="JobImage" class="text-danger"></span>
     </div>
 
     <div>
@@ -59,6 +61,7 @@
 <br />
 @Html.ActionLink("العودة الى القائمه", "Back", "Jobs")
 
+
 @section scripts{
     <script>
         $(function () {
@@ -85,8 +88,15 @@
                         $("#view-err").append("رجاء قم باختيار صوره حجمها اقل من 2 ميغا بايت");
                     }
                 }
+                else{
+                    $("#error-div").fadeIn();
+                    $("#view-err").clearQueue();
+                    $("#view-err").append("رجاء قم باختيار صوره للوظيفه");
+                    return false;
+                }
             });
         });
     </script>
 
 }
+ 

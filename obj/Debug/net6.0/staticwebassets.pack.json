@@ -1,24 +1,84 @@
 {
   "Files": [
     {
-      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\1.jpg",
-      "PackagePath": "staticwebassets\\Images\\1.jpg"
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\07b37a3c-b957-4b25-b460-9140c8a10b0f_images.jpg",
+      "PackagePath": "staticwebassets\\Images\\07b37a3c-b957-4b25-b460-9140c8a10b0f_images.jpg"
     },
     {
-      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\3.jpg",
-      "PackagePath": "staticwebassets\\Images\\3.jpg"
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\0e906f85-a35e-4ca7-9b8e-afed73c050b2_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\0e906f85-a35e-4ca7-9b8e-afed73c050b2_4.jpg"
     },
     {
-      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\4.jpg",
-      "PackagePath": "staticwebassets\\Images\\4.jpg"
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\13789e81-5eab-4683-bd31-62504e3c527c_lawer.jpg",
+      "PackagePath": "staticwebassets\\Images\\13789e81-5eab-4683-bd31-62504e3c527c_lawer.jpg"
     },
     {
-      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\5.jpg",
-      "PackagePath": "staticwebassets\\Images\\5.jpg"
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\159ba60f-ca2a-424f-ae75-106463666017_j.jpg",
+      "PackagePath": "staticwebassets\\Images\\159ba60f-ca2a-424f-ae75-106463666017_j.jpg"
     },
     {
-      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\6.jpg",
-      "PackagePath": "staticwebassets\\Images\\6.jpg"
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\195275d3-e54f-4635-9d5f-0b6d1b9d651a_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\195275d3-e54f-4635-9d5f-0b6d1b9d651a_3.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\1bc35c05-5102-4d0e-a7e0-30d3d2534ee5_19e178e90f9c842bc434d499bab95e5f.jpg",
+      "PackagePath": "staticwebassets\\Images\\1bc35c05-5102-4d0e-a7e0-30d3d2534ee5_19e178e90f9c842bc434d499bab95e5f.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\24725a39-a9d4-44b4-ad96-ac81efa282bc_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\24725a39-a9d4-44b4-ad96-ac81efa282bc_5.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\3bbbcd76-d80b-4a5b-98ec-9cb607c908a1_m.jpg",
+      "PackagePath": "staticwebassets\\Images\\3bbbcd76-d80b-4a5b-98ec-9cb607c908a1_m.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\3d41fac9-0731-4d82-8f33-a0528a5a9c8f_59c507a48053c21cef0736a881c7a490.jpg",
+      "PackagePath": "staticwebassets\\Images\\3d41fac9-0731-4d82-8f33-a0528a5a9c8f_59c507a48053c21cef0736a881c7a490.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\5ee09e69-afae-4a53-a5c4-2ae53608cd41_download  .jpg",
+      "PackagePath": "staticwebassets\\Images\\5ee09e69-afae-4a53-a5c4-2ae53608cd41_download  .jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\77a63701-e8af-4fbd-944c-c0c6135af3b1_123f7d38024eb26395c85c6fdbfac7cc.jpg",
+      "PackagePath": "staticwebassets\\Images\\77a63701-e8af-4fbd-944c-c0c6135af3b1_123f7d38024eb26395c85c6fdbfac7cc.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\881f2527-afa1-4d96-9e8b-f3c963eee807_j.jpg",
+      "PackagePath": "staticwebassets\\Images\\881f2527-afa1-4d96-9e8b-f3c963eee807_j.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\945e03ed-9cdb-4f9d-8d17-eb3039d0751a_lawer.jpg",
+      "PackagePath": "staticwebassets\\Images\\945e03ed-9cdb-4f9d-8d17-eb3039d0751a_lawer.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\97b386d7-bd49-457d-81cf-209a64b21cb4_6.jpg",
+      "PackagePath": "staticwebassets\\Images\\97b386d7-bd49-457d-81cf-209a64b21cb4_6.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\a6fc44b4-24fc-43b4-b9ef-b142874330ce_6.jpg",
+      "PackagePath": "staticwebassets\\Images\\a6fc44b4-24fc-43b4-b9ef-b142874330ce_6.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\b5fcf20b-c65d-4b92-8fbf-601969631327_07b37a3c-b957-4b25-b460-9140c8a10b0f_images.jpg",
+      "PackagePath": "staticwebassets\\Images\\b5fcf20b-c65d-4b92-8fbf-601969631327_07b37a3c-b957-4b25-b460-9140c8a10b0f_images.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\c31e385a-6a3b-462f-89ab-4603202d1954_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\c31e385a-6a3b-462f-89ab-4603202d1954_1.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\ce49ec72-3a88-482e-99da-1ee760e998ec_6.jpg",
+      "PackagePath": "staticwebassets\\Images\\ce49ec72-3a88-482e-99da-1ee760e998ec_6.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\download.jpg",
+      "PackagePath": "staticwebassets\\Images\\download.jpg"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\e8802fb8-0f13-45db-b266-9a3ca389a6d0_l.jpg",
+      "PackagePath": "staticwebassets\\Images\\e8802fb8-0f13-45db-b266-9a3ca389a6d0_l.jpg"
     },
     {
       "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\Images\\logo.jpg",
@@ -471,6 +531,18 @@
     {
       "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\lib\\jquery\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\jquery.js"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\uploads\\51e4bb52-e206-4a95-9e22-5bbd674a10c5_rahma abo shaheen.pdf",
+      "PackagePath": "staticwebassets\\uploads\\51e4bb52-e206-4a95-9e22-5bbd674a10c5_rahma abo shaheen.pdf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\uploads\\58c37e9f-f6ec-453d-8a1d-0c3063042e68_MyCV.pdf",
+      "PackagePath": "staticwebassets\\uploads\\58c37e9f-f6ec-453d-8a1d-0c3063042e68_MyCV.pdf"
+    },
+    {
+      "Id": "D:\\just try c#\\MVC\\Job_offers\\wwwroot\\uploads\\fa24d973-df5f-4acd-b922-15d473b32ef3_MyCV.pdf",
+      "PackagePath": "staticwebassets\\uploads\\fa24d973-df5f-4acd-b922-15d473b32ef3_MyCV.pdf"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Job_offers.Microsoft.AspNetCore.StaticWebAssets.props",

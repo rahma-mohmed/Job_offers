@@ -19,25 +19,28 @@
 
 
 <h3>اضافة وظيفه</h3>
-<form action="\Jobs\SaveAdd\@Model.Id" class=" form" method="post" style="padding-right:50px">
+<form action="Add" class="form" method="post" style="padding-right:50px" enctype="multipart/form-data">
     <div class="alert alert-danger" id="error-div" style="display:none">
         <span id="view-err">
 
         </span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="JobTitle">  أسم الوظفيه:</label>
         <input type="text" name="JobTitle" id="JobTitle" class="form-control" value="@Model.JobTitle" />
+        <span asp-validation-for="JobTitle" class="text-danger"></span>
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="JobContent">  وصف الوظيفه:</label>
         <input type="text" name="JobContent" id="JobContent" class="form-control" value="@Model.JobContent" />
+        <span asp-validation-for="JobContent" class="text-danger"></span>
     </div>
 
-    <div>
-        <label for="JobImage">  صورة الوظيفه:</label>
-        <input type="file" name="JobImage" id="JobImage" class="form-control" value="@Model.JobImage" /> 
+    <div class="form-group">
+        <label asp-for="JobImage"></label>
+        <input asp-for="JobImage" type="file" class="form-control" />
+        <span asp-validation-for="JobImage" class="text-danger"></span>
         @* <input type="text" name="JobImage" id="JobImage" class="form-control" value="@Model.JobImage" /> *@
 
     </div>
@@ -61,6 +64,8 @@
                 }
 
             }
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+
         </select>
     </div>
 
@@ -68,8 +73,7 @@
     <input type="submit" value="اضافه" class="btn btn-success" style="background-color:#ec4899;" id="save" />
 </form>
 
-
-@section scripts {
+@* @section scripts {
     <script>
         $(function () {
             $("#save").click(function () {
@@ -103,4 +107,4 @@
         });
     </script>
 
-}
+}  *@

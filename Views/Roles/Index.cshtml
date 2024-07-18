@@ -10,10 +10,10 @@
     @Html.ActionLink("انشاء دور جديد", "Create")
     </p>
 
-    <table class="table">
+<table class="table table-striped table-bordered table-hover">
         <tr>
             <th>
-
+                الاسم
             </th>
             <th></th>
         </tr>
@@ -22,7 +22,11 @@
       <tr>
           <td>@item.Name</td>
           <td>
-
+            <td>
+                <a asp-controller="Roles" asp-action="Edit" asp-route-id="@item.Id"> تعديل </a> |
+                <a asp-controller="Roles" asp-action="Details" asp-route-id="@item.Id"> تفاصيل </a> |
+                <a asp-controller="Roles" asp-action="Delete" asp-route-id="@item.Id"> حذف </a>
+            </td>
           </td>
       </tr>  
     }

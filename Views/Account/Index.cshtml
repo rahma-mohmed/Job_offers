@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "الصفحة الرئيسية";
 }
 
 @model List<Category>
@@ -8,37 +8,31 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div> *@
-<h1>أهلا بك عزيزي الزائر في موقعنا</h1>
-<div class ="jumbotron">
-
+<div class="jumbotron" style="background-color:#fbcfe8;">
+    <h2>أهلا بك عزيزي الزائر في موقعنا</h2>
     <p class="lead">مرحبا بك في فضاء البحث عن الوظائف باختلاف انواعها يمكنك النشر او البحث عن وظيفه</p>
     <br />
     <p><a href="#" class="btn btn-default" style="background-color:#ec4899; color:white;"> >> المزيد من التفاصيل</a></p>
 </div>
-
+<br />
 @foreach(var item in Model)
 {
     <div class="panel panel-default">
-    <h1 class="panel-heading">@item.CategoryName</h1>
-    <h5>@item.CategoryDescription</h5>
+        <div class="panel-heading" style="background-color:#fbcfe8"><h1>@item.CategoryName</h1></div>
+    
 
         <div class="row" style="padding:20px;">
-    @foreach(var subitem in item.Jobs)
-    {
-            <div class="col-md-3 thumbnail" style="margin-bottom:30px;margin-left:20px;">
-                <img src="~/Images/@subitem.JobImage" />
+            <h4>@item.CategoryDescription</h4>
+        @foreach(var subitem in item.Jobs)
+        {
+            <div class="col-md-3 thumbnail" style="margin-bottom:30px;margin-left:20px;min-height:370px">
+                <img src="~/@subitem.JobImage" />
                 <h3>@subitem.JobTitle</h3>
                 <h5>@subitem.JobContent</h5>
-                <button class="btn btn-default"><a asp-controller="Jobs" asp-action="Details" asp-route-id="@subitem.Id" style="color:black; text-decoration:none;margin-bottom:10px;"> تفاصيل </a></button>
-            </div>
-
-            <div class="col-md-3">
-            </div>
-
-            <div class="col-md-3">
+                    <button class="btn btn-primary"><a asp-controller="Jobs" asp-action="Details" asp-route-id="@subitem.Id" class="btn btn-primary"> تفاصيل </a></button>
             </div>
             
-    }
+        }
     </div>
     </div>
 }

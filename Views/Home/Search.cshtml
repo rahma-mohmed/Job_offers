@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Job_offers.Models.Job>
+
+@{
+    ViewData["Title"] = "نتائج البحث";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+
+    <div class="panel panel-default">
+        <h1 class="panel-heading">نتائج البحث</h1>
+
+        <div class="row" style="padding:20px;">
+            @foreach (var subitem in Model)
+            {
+                <div class="col-md-3 thumbnail" style="margin-bottom:30px;margin-left:20px;">
+                    <img src="~/@subitem.JobImage" />
+                    <h3>@subitem.JobTitle</h3>
+                    <h5>@subitem.JobContent</h5>
+                    <button class="btn btn-primary"><a asp-controller="Jobs" asp-action="Details" asp-route-id="@subitem.Id" class="btn btn-primary"> تفاصيل </a></button>
+                </div>
+
+            }
+        </div>
+    </div>

@@ -1,0 +1,29 @@
+﻿@model Account
+<h3>اهلا بعودتك </h3>
+<form asp-action="Login" class=" form" method="post" style="padding-right:50px">
+    
+    <input type="hidden" value="@ViewData["ReturnUrl"]" name="ReturnUrl" />
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+
+    </div>
+
+    <div>
+        <label asp-for="IsPresistent"></label>
+        <input asp-for="IsPresistent" type="checkbox"/>
+    </div>
+
+    <br />
+    <h5 class="text-danger">@ViewBag.Notification</h5>
+
+    <br />
+    <input type="submit" value="دخول" class="btn btn-success" style="background-color:#ec4899;" />
+</form>
+

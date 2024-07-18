@@ -1,103 +1,75 @@
 ﻿using Job_offers.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using Microsoft.AspNetCore.Http;
-using System.Runtime.Intrinsics.X86;
+using System.Net;
+using System.Net.Mail;
+using System.Net.NetworkInformation;
 
 namespace Job_offers.Controllers
 {
     public class HomeController : Controller
     {
-        Account account = new Account();
-        JobContext context = new JobContext();
+        private readonly JobContext context;
 
-        private readonly ILogger<HomeController> _logger;
-
-
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(JobContext _context)
         {
-            _logger = logger;
+            context = _context;
         }
-        
         public IActionResult Index()
-        {
-            List<Category> categories = context.Categories.Include(c => c.Jobs).ToList();
-            return View(categories);
-        }
-
-        public IActionResult Signup()
-        {
-
-            List<string> Accounts_Type = new List<string>() { "ناشر", "باحث" };
-            ViewBag.Types = Accounts_Type;
-
-            return View(account);
-        }
-
-        [HttpPost]
-        public IActionResult Signup(Account account) {
-
-            List<string> Accounts_Type = new List<string>() { "ناشر", "باحث" };
-            ViewBag.Types = Accounts_Type;
-
-            if (context.Accounts.Any(x => x.Name == account.Name))
-            {
-                ViewBag.Notification = "هذا الحساب موجود بالفعل";
-                return View(account);
-            }
-            else
-            {
-                context.Accounts.Add(account);
-                context.SaveChanges();
-
-                HttpContext.Session.SetString("Id", account.Id.ToString());
-                HttpContext.Session.SetString("Name",account.Name);
-
-                return RedirectToAction("Index");
-            }
-        }
-
-        public IActionResult Login()
-        {
-            return View(account);
-        }
-
-        [HttpPost]
-        public IActionResult Login(Account account)
-        {
-            var check = context.Accounts.Where(x => x.Name.Equals(account.Name) && x.Password.Equals(account.Password)).FirstOrDefault();
-            if (check != null)
-            {
-                HttpContext.Session.SetString("Id" , account.Id.ToString());
-                HttpContext.Session.SetString("Name", account.Name);
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                ViewBag.Notification = "خطأ فى أسم المستخدم او كلمه المرور";
-                return View(account);
-            }
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult About()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Contact()
+        {
+            return View();
         }
 
-        public IActionResult Logout()
+        [HttpPost]
+        public IActionResult Contact(ContactModel contact)
         {
-            HttpContext.Session.Clear();
-            return RedirectToAction("Index");
+            var mail = new MailMessage();
+            var loginInfo = new NetworkCredential("engrahma1422003@gmail.com", "etrkprfhvrhixlxz");
+            mail.From = new MailAddress(contact.Email);
+            mail.To.Add(new MailAddress("engrahma1422003@gmail.com"));
+            mail.Subject = contact.Subject;
+            mail.IsBodyHtml = true;
+            string body = "اسم المرسل: " + contact.Name + "<br>" +
+                          "بريد المرسل: " + contact.Email + "<br>" +
+                          "عنوان الرسالة: " + contact.Subject + "<br>" +
+                          "نص الرسالة: <b>" + contact.Message + "</b>" ;
+            mail.Body = body;
+            var smtp = new SmtpClient("smtp.gmail.com" , 587);
+            smtp.UseDefaultCredentials = false;
+            smtp.EnableSsl = true;
+            smtp.Credentials = loginInfo;
+            smtp.Send(mail);
+
+            return RedirectToAction("Index" , "Account");
+        }
+
+        public IActionResult Search()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Search(string searchName)
+        {
+            var res = context.Jobs.Where(a => a.JobTitle.Contains(searchName)
+            || a.JobContent.Contains(searchName)
+            || a.Category.CategoryName.Contains(searchName)
+            || a.Category.CategoryDescription.Contains(searchName)  
+            );
+
+            return View(res);
         }
     }
 }

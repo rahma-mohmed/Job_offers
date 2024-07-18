@@ -73,3 +73,32 @@ body {
 }
 
 
+#searchName {
+    width: 130px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    background-image: url('../images/download.jpg');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 10px;
+    /*background-position:10px 10px;*/
+    margin-left: 60px;
+    transition: width 0.3s ease-in-out;
+}
+
+    #searchName:focus {
+        width: 100%;
+    }
+
+.nav-bar-user{
+    padding:10px;
+    padding-bottom:0px;
+    width:350px;
+}
+
+@media (min-width: 992px) {
+    .col-md-3 {
+        width: 30%;
+    }
+}

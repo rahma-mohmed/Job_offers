@@ -18,7 +18,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand">
+                <a asp-action="Index" asp-controller="Account" class="navbar-brand">
                     <img src="~/images/logo2.png" style="width: 100px;height: 55px; padding-bottom:20px" />
                     
                 </a>
@@ -26,55 +26,34 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar navbar-nav">
                     <li>
-                        <a href="#">
+                        <a asp-action="Index" asp-controller="Account">
                             <i class="glyphicon glyphicon-home"></i>
                             الصفحه الرئيسيه
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-list"> </i>
-                            أصناف العروض
-                        </a>
-                    </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#who">
                             <i class="glyphicon glyphicon-info-sign"></i>
                             حول الموقع
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a asp-action="Contact" asp-controller="Home">
                             <i class="glyphicon glyphicon-envelope"></i>
                             أتصل بنا
                         </a>
                     </li>
 
-                    @if(ViewContext.HttpContext.Session.GetString("Name") != null)
-                    {
-                        <li style="padding-right:200px;">
-                            <a asp-area="" asp-controller="Home" asp-action="Index">مرحبا بك يا  @ViewContext.HttpContext.Session.GetString("Name")</a>
-                        </li>
+                    <li>
+                        @using(Html.BeginForm("Search" , "Home" , FormMethod.Post)){
+                            <input type="text" name="searchName" id="searchName" placeholder="أبحث هنا.." />
+                        }
+                    </li>
 
-
-                        <li style="padding-left:50px;">
-                            <a  asp-area="" asp-controller="Home" asp-action="Logout">تسجيل الخروج</a>
-                        </li>
-                    }
-                    else
-                    {
-                        
-                        <li style="padding-right:200px;">
-                            <a  asp-area="" asp-controller="Home" asp-action="Login">تسجيل الدخول</a>
-                        </li>
-
-                        <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Signup">أشتراك</a>
-                        </li>
-                    }
+                    <partial name="_login" />
 
                 </ul>
             </div>
@@ -82,7 +61,7 @@
     </nav>
 
     <div class="container">
-        <div class="row">
+        <div class="row" style="min-height:400px;">
             @RenderBody()
         </div>
     </div>
@@ -93,7 +72,7 @@
     <footer class="myFooter" style="position: relative;
     top: 250px;">
         <div class="container">
-            <div class="row">
+            <div class="row" id="who">
                 <div class="col-md-4">
                     <h3>
                         من نحن؟

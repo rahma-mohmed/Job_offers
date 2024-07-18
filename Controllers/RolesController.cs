@@ -1,23 +1,35 @@
 ﻿using Job_offers.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Job_offers.Controllers
 {
     public class RolesController : Controller
     {
-        JobContext context = new JobContext();
+        private readonly JobContext context;
+
+        public RolesController(JobContext _context)
+        {
+              context = _context;
+        }
         // GET: RolesController
         public ActionResult Index()
         {
-            return View(context.Roles.ToList());
+            List<RoleViewModel> roles = context.Roles.ToList();
+            return View(roles);
         }
 
         // GET: RolesController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var rol = context.Roles.Find(id);
+            if(rol == null)
+            {
+                return NotFound();
+            }
+            return View(rol);
         }
 
         // GET: RolesController/Create
@@ -29,43 +41,46 @@ namespace Job_offers.Controllers
         // POST: RolesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(RoleViewModel role)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+                if (ModelState.IsValid) { 
+                    context.Roles.Add(role);
+                    context.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+                return View(role);
         }
 
         // GET: RolesController/Edit/5
-        public ActionResult Edit(int id)
+        public IActionResult Edit(int id)
         {
-            return View();
+            RoleViewModel role = context.Roles.FirstOrDefault(x => x.Id == id);
+            return View(role);
         }
 
         // POST: RolesController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit([FromRoute] int id, RoleViewModel role)
         {
-            try
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                RoleViewModel rl = context.Roles.FirstOrDefault(x => x.Id == id);
+                rl.Name = role.Name;
+                context.Roles.Update(rl);
+                context.SaveChanges();
+                return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(role);
         }
 
         // GET: RolesController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var role = context.Roles.Find(id);
+            context.Roles.Remove(role);
+            context.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         // POST: RolesController/Delete/5

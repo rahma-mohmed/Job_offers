@@ -1,23 +1,20 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 namespace Job_offers.Models
 {
-    public class JobContext : DbContext
+    public class JobContext : IdentityDbContext
     {
-        public JobContext() : base()
+        public JobContext(DbContextOptions<JobContext> options) : base(options)
         {
+
         }
 
+        public DbSet<ApplyForJob> ApplyForJobs { get; set; }
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Job> Jobs { get; set; }
         public DbSet<RoleViewModel> Roles { get; set; }
-
-
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=JobDB ;Integrated Security=True");
-        }
     }
 }

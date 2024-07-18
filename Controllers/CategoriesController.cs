@@ -1,4 +1,5 @@
 ﻿using Job_offers.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,15 @@ using System.Security.Principal;
 
 namespace Job_offers.Controllers
 {
+    
     public class CategoriesController : Controller
     {
-        JobContext context = new JobContext();
+        private readonly JobContext context;
+
+        public CategoriesController(JobContext _context)
+        {
+            context = _context;
+        }
 
         public IActionResult IndexCategory()
         {
@@ -35,7 +42,7 @@ namespace Job_offers.Controllers
             }
             return View("AddCategory", category);
         }
-
+        [Authorize]
         public IActionResult Edit(int id)
         {
             Category categories = context.Categories.FirstOrDefault(x => x.Id == id);

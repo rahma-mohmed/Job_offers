@@ -7,7 +7,7 @@ namespace Job_offers.Models
     public class Category
     {
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage ="رجاء قم بادخال نوع الوظيفه")]
         [Display(Name = "نوع الوظيفة")]
         public string CategoryName { get; set; }
         [Required]
