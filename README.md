@@ -16,7 +16,7 @@ The **Job Offers Management System** is a web-based platform that allows employe
 - 🎨 **Responsive UI** – Clean and modern design using **Bootstrap**.  
 
 ## 🛠 Technologies Used  
-- **.NET 8 (ASP.NET Core MVC)**  
+- **.NET 6 (ASP.NET Core MVC)**  
 - **Entity Framework Core** (SQL Server)  
 - **Microsoft Identity** for authentication  
 - **Bootstrap & CSS** for responsive design  
