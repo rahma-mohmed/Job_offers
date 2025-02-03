@@ -30,7 +30,6 @@ Follow these steps to set up the project locally:
 ### 1️⃣ Clone the repository:  
 ```sh
 git clone https://github.com/rahma-mohmed/job-offers-MVC-Project.git
-cd job-offers-MVC-Project
 ```
 2️⃣ Restore dependencies:
 ```sh
