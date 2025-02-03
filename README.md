@@ -13,7 +13,6 @@ The **Job Offers Management System** is a web-based platform that allows employe
 - 🏢 **Employer Dashboard** – Employers can post, edit, and delete job offers.  
 - 👤 **User Authentication** – Secure login and registration for job seekers and employers.  
 - 📊 **Admin Panel** – Manage users, job listings, and applications.  
-- 🌍 **Multi-Language Support** – Switch between Arabic and English.  
 - 🎨 **Responsive UI** – Clean and modern design using **Bootstrap**.  
 
 ## 🛠 Technologies Used  
