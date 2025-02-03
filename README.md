@@ -43,7 +43,7 @@ dotnet ef database update
 dotnet run
 ```
 5️⃣ Open in browser:
-Visit: http://localhost:5000
+Visit: http://localhost:41568/
 
 ### 📜 Usage
 - Job seekers can browse job listings and apply online.  
